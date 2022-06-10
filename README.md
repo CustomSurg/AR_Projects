@@ -1,6 +1,10 @@
-# [Mixed Reality Lab](http://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=139691&semkez=2020W&ansicht=KATALOGDATEN&lang=en) 2020, Course Project
+<p align="right">
+  <img src="https://www.venturekick.ch/demandit/files/M_BB941CC4DCEF687AD98/dms//Image/CustomSurg_Sept2020_noBG.png" alt="CustomSurg Logo"/>
+</p>
 
-- [Mixed Reality Lab 2020, Course Project](#mixed-reality-lab-2020-course-project)
+# CustomSurg HoloLens 2 Surgery Enhancement Application
+
+- [CustomSurg HoloLens 2 Surgery Enhancement Application](#customsurg-hololens-2-surgery-enhancement-application)
   - [Team](#team)
   - [Project Description](#project-description)
   - [Features](#features)
