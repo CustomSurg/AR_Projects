@@ -1,5 +1,5 @@
 <p align="right">
-  <img src="https://www.venturekick.ch/demandit/files/M_BB941CC4DCEF687AD98/dms//Image/CustomSurg_Sept2020_noBG.png" alt="CustomSurg Logo"/>
+  <img src=doc/logo_customsurg.jpg alt="CustomSurg Logo"/>
 </p>
 
 # AR Surgery Enhancement Application
@@ -33,7 +33,8 @@ This repository contains the surgery enhancement tool developed by CustomSurg fo
   - [Importing Document in Slate](#importing-document-in-slate)
   - [Building and Deploying the project](#building-and-deploying-the-project)
 
-## Team 
+## Team
+
 - **Dominik Alberto** ([@doalberto](https://github.com/doalberto))<br>doalbert@student.ethz.ch
 - **Daniele Chiappalupi** ([@daniCh8](https://github.com/daniCh8))<br>dchiappal@student.ethz.ch
 - **Jorel Elmiger** ([@elmigerj](https://github.com/elmigerj))<br>elmigerj@student.ethz.ch
@@ -41,17 +42,18 @@ This repository contains the surgery enhancement tool developed by CustomSurg fo
 - **Hamza Javed** ([@hamzajaved05](https://github.com/hamzajaved05))<br>javedh@student.ethz.ch
 
 ## Project Description
-The goal of this project is to create a HoloLens 2 application able to assist surgeons during complex fracture surgeries. In some critical cases, bones can be fractured into many separate pieces that need to be realigned and fixed with an artificial supportive structure. The position and orientation of the bone structures is usually not well visible during the surgery, and surgeons have to remember their position from the scan inspection prior to the surgery. The major task is hence to allow surgeons to reinspect the scan data during the surgery and better understand individual bone positions as needed. 
+
+The goal of this project is to create a HoloLens 2 application able to assist surgeons during complex fracture surgeries. In some critical cases, bones can be fractured into many separate pieces that need to be realigned and fixed with an artificial supportive structure. The position and orientation of the bone structures is usually not well visible during the surgery, and surgeons have to remember their position from the scan inspection prior to the surgery. The major task is hence to allow surgeons to reinspect the scan data during the surgery and better understand individual bone positions as needed.
 
 ![default_scene](./doc/pictures/default-scene.png)
 
-Using the HoloLens 2 to do so would be of great benefit, since the surgeon can't physically touch any object during the surgery, to not compromise the sterilization of the surgery room. 
+Using the HoloLens 2 to do so would be of great benefit, since the surgeon can't physically touch any object during the surgery, to not compromise the sterilization of the surgery room.
 
 ## Features
 
-The project we developed provides many features that can be used by the surgeon depending on the way he wants to use the application. 
+The project we developed provides many features that can be used by the surgeon depending on the way he wants to use the application.
 
-Below is a list of the features that are available right now in the app. 
+Below is a list of the features that are available right now in the app.
 
 ### CT Scene
 
@@ -59,7 +61,7 @@ We distinguish between *CT Scene* and *Screw Manipulation Scene*. This first sce
 
 #### **Manipulation**
 
-We allow different ways of manipulating the object in the scene. The user can choose whether to move all the objects together locking the relative position within them, or to move just the bone group or the scans group. 
+We allow different ways of manipulating the object in the scene. The user can choose whether to move all the objects together locking the relative position within them, or to move just the bone group or the scans group.
 
 [![manipulations](./doc/gif/manipulations.gif)](./doc/video/_manipulations.mp4)
 
@@ -75,7 +77,7 @@ You can click on the GIF above to see the full demo-video.
 
 #### **Hand Slicer**
 
-One of the main feature of the application is to use the hand as a bone slicer. Putting the hand on top of the bone allows to create a section of it with more freedom than using the plane slicers. Moreover, we developed a plane-locking mechanism that allows the user to lock the plane at a given position. The mechanism works in the following way: keeping the thumb aligned with the other fingers will keep slicing the bone, and raising the thumb perpendicular to the other fingers will lock the plane position and only allow movement in the normal direction of the locked plane. 
+One of the main feature of the application is to use the hand as a bone slicer. Putting the hand on top of the bone allows to create a section of it with more freedom than using the plane slicers. Moreover, we developed a plane-locking mechanism that allows the user to lock the plane at a given position. The mechanism works in the following way: keeping the thumb aligned with the other fingers will keep slicing the bone, and raising the thumb perpendicular to the other fingers will lock the plane position and only allow movement in the normal direction of the locked plane.
 
 The plane locking mechanism can also be activated using voice-commands. The keyphrase "Stop Tracking" will lock the plane, and the keyphrase "Track My Hand" will unlock it back. See [this video](./doc/video/plane-locking-voice.mp4) with volume for a demonstration.
 
@@ -130,6 +132,7 @@ You can click on the GIF above to see the full demo-video.
 #### **Focus on Plates**
 
 This functionality allows the user to change the viewing of the plates and the screws. The possible modalities are:
+
 - View each plate and all the screws (default).
 - View only the lateral plate and the lateral screws.
 - View only the medial plate and the medial screws.
@@ -189,7 +192,7 @@ You can click on the GIF above to see the full demo-video.
 
 #### **Screw Length**
 
-The length of the selected screw is always visualized above the bone. To measure the distance between two points of the bone, just create a new screw selecting these two points (the new created screw can then be deleted as shown above). 
+The length of the selected screw is always visualized above the bone. To measure the distance between two points of the bone, just create a new screw selecting these two points (the new created screw can then be deleted as shown above).
 
 [![screw_length](./doc/gif/screw-length.gif)](./doc/video/_screw-length.mp4)
 
@@ -197,25 +200,30 @@ You can click on the GIF above to see the full demo-video.
 
 ## Logo
 
-The official logo of the application is given by CustomSurg. It is used both as app menu icon and splash screen. 
+The official logo of the application is given by CustomSurg. It is used both as app menu icon and splash screen.
 
 [![logo](./doc/gif/logo.gif)](./doc/video/_logo.mp4)
 
 You can click on the GIF above to see the full demo-video.
 
 ## CT-Scans
+
 The medical scans we are provided with are in DICOM format. The pipeline we followed to use those scans is the following:
+
 - We used [3D Slicer](https://www.slicer.org/) to turn them from binary format to [`nrrd`](https://en.wikipedia.org/wiki/Nrrd) format. Inside **Slicer**, we imported the *DICOM* folder containing the files, and saved the data in `nrrd` extension.
 - `nrrd` format is a very broad one. To ease our computations, we allow only a specific `nrrd` setting in our project. To convert any `nrrd` file to the required settings, we used [this python script](/Assets/CT/convert.py) from an older version of the project. Note that this script will override the existing `nrrd` file.
 - Finally, we can use the processed file inside our project. To do so, since in **Unity** we only work with *Text Assets*, we need to rename the `nrrd` file to have a `bytes` extension (i.e. from `ct.nrrd` to `ct.bytes`). This file can be then provided to a script inside **Unity** to read it. Scripts able to do so can be found in [`Assets/CT/`](/Assets/CT/).
 
 ## Importing Document in Slate
+
 Displaying PDFs using Unity and C# is not a trivial task. Our first solution to this problem has been to convert each page of the pdf into a picture, and then using each picture to create a material that will be displayed on the Slate. An example of this can be found in [`Assets/PDF-Viewer/`](/Assets/PDF-Viewer).
 
 After creating a material per slide, these materials should be placed ordered inside the [`Pages`](/Assets/PDF-Viewer/Pages.cs) component of the ContentQuad inside the Slate hierarchy. The size parameter should be set accordingly. This will allow the view of any document inside the Slate.
 
 ## Building and Deploying the project
+
 After successfully imported the CT-Scans as explained [above](#ct-scans), from Unity go to `File -> Build Settings`. In the window this window, select the following configurations:
+
 - `Target Device`: `Any device`;
 - `Architecture`: `x64`;
 - `Build Type`: `D3D Project`;
