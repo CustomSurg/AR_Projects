@@ -2,9 +2,11 @@
   <img src="https://www.venturekick.ch/demandit/files/M_BB941CC4DCEF687AD98/dms//Image/CustomSurg_Sept2020_noBG.png" alt="CustomSurg Logo"/>
 </p>
 
-# CustomSurg HoloLens 2 Surgery Enhancement Application
+# AR Surgery Enhancement Application
 
-- [CustomSurg HoloLens 2 Surgery Enhancement Application](#customsurg-hololens-2-surgery-enhancement-application)
+This repository contains the surgery enhancement tool developed by CustomSurg for the Microsoft HoloLens 2.
+
+- [AR Surgery Enhancement Application](#ar-surgery-enhancement-application)
   - [Team](#team)
   - [Project Description](#project-description)
   - [Features](#features)
