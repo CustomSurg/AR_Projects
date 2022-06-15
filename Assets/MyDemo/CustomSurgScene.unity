@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20485,7 +20485,7 @@ MonoBehaviour:
   pinchSliderHor: {fileID: 4464616428543595917}
   pinchSliderVer: {fileID: 903487277}
   cTReader: {fileID: 278603713}
-  scansOne: {fileID: 4900000, guid: b9e7c3a16a6fc4342a029836f2b98e91, type: 3}
+  scansOne: {fileID: 4900000, guid: eb0ab9f1af0ff4142bc7f5be5c492067, type: 3}
   scansTwo: {fileID: 4900000, guid: eb0ab9f1af0ff4142bc7f5be5c492067, type: 3}
   screwPatOne: {fileID: 253716662}
   screwPatTwo: {fileID: 85439648}
