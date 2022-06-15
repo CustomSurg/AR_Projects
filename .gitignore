@@ -60,12 +60,8 @@ sysinfo.txt
 *.unitypackage
 
 # Private Scans Assets
-**.bytes
-**.bytes.meta
-**.nrrd
-**.nrrd.meta
-**.nii
-**.nii.meta
+Assets/Patients/*/CT/*
+
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -75,3 +71,19 @@ crashlytics-build.properties
 App/
 App1/
 .DS_Store
+
+# # appx packages
+# !Build
+# Build/*
+# !Build/AppPackages
+# Build/AppPackages/*
+# !Build/AppPackages/Surgery
+# Build/AppPackages/Surgery/*/*
+# !Build/AppPackages/Surgery/*/*.appx
+# !Build/AppPackages/Surgery/*/*.appxbundle
+
+# Rhino models
+**.3dm
+
+
+
