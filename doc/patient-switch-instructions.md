@@ -16,7 +16,7 @@ Steps:
    * if you cropped the CT scan you can skip to step 5
    * it is possible that if the CT is cropped it overlaps in the HoloLens (unknown why)
 
-3. If you don't want to crop the CT scan you need to convert the nrrd file to the correct format using [this](Assets/CT/convert.py) python script (this conversion is already included if you crop it with the notebook).
+3. If you don't want to crop the CT scan you need to convert the nrrd file to the correct format using [this](/Assets/CT/convert.py) python script (this conversion is already included if you crop it with the notebook).
 4. Change the file extension from .nrrd to .bytes and copy the .bytes file into the CT folder
 
 ### Bone fragments, plates and screws
