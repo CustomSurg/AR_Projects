@@ -10,14 +10,24 @@ Create a `CT` folder in your new patient folder you created before.
 
 Steps:
 
+**If you already have a nrrd file:**
+
+* If you need to crop it: determine the outer points from MITK-GEM and crop the nrrd file using [this](https://github.com/SimonCom/CustomSurg/blob/main/Segmentation/imageCropping.ipynb) notebook.
+* If you don't need to crop it: use [this](/Assets/CT/convert.py) python script to convert the nrrd-file to the right format. How to use the script: open a terminal, navigate to the folder where you saved the script and write: `python convert.py <replace with path to nrrd file>`
+
+**If you need to create a nrrd file:**
+
 1. load the DICOM into MITK-GEM and export the CT scan as an nrrd-file
-2. If needed crop the file using MITK-GEM or use [this](https://github.com/SimonCom/CustomSurg/blob/main/Segmentation/imageCropping.ipynb) jupyter notebook.
+2. If needed, crop the file using MITK-GEM or use [this](https://github.com/SimonCom/CustomSurg/blob/main/Segmentation/imageCropping.ipynb) jupyter notebook.
 
    * if you cropped the CT scan you can skip to step 5
    * it is possible that if the CT is cropped it overlaps in the HoloLens (unknown why)
 
-3. If you don't want to crop the CT scan you need to convert the nrrd file to the correct format using [this](/Assets/CT/convert.py) python script (this conversion is already included if you crop it with the notebook).
-4. Change the file extension from .nrrd to .bytes and copy the .bytes file into the CT folder
+3. If you don't want to crop the CT scan you need to convert the nrrd file to the correct format using [this](/Assets/CT/convert.py) python script (this conversion is already included if you crop it with the notebook). How to use the script: open a terminal, navigate to the folder where you saved the script and write: `python convert.py <replace with path to nrrd file>`
+
+**Last step: file extension**
+
+To use the CT scan in the HoloLens you need to change the file extension from .nrrd to .bytes (change the name from the file explorer) and copy the .bytes file into the CT folder of your patient.
 
 ### Bone fragments, plates and screws
 
