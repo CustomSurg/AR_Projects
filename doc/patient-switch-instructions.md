@@ -21,8 +21,7 @@ Steps:
 
 ### Bone fragments, plates and screws
 
-Open the 3dm patient model using Rhino and run [this](https://github.com/SimonCom/CustomSurg/blob/newpatient_hololens/Rhino/ExportObjects_hololens_cmd.py) python script to export all .obj files and correct screw coordinate files. It creates several folders containing all the required .obj files and .txt files in the same folder as the Rhino model is saved.
-**Note:** the link to the python script needs to be updated as soon as the HoloLens branch is included into the main branch of the CustomSurg github repository.
+Open the 3dm patient model using Rhino and run [this](https://github.com/SimonCom/CustomSurg/blob/main/Rhino/ExportObjects_hololens_cmd.py) python script to export all .obj files and correct screw coordinate files. It creates several folders containing all the required .obj files and .txt files in the same folder as the Rhino model is saved.
 
 ## New Patient Setup in Unity
 
