@@ -30,7 +30,8 @@ Now that we built the Unity project, we need to create the App Package using Vis
 3. Click on Project -> Publish -> Create App Packages...
 4. Select Sideloading as distribution method and press Next.
 5. Select the current certificate as a signing method and press Next.
-6. Be careful with the selection of packages. Check only ARM64 as Architecture, and select Release (ARM64) as Solution Configuration. To ensure consistent version numbering check the latest release on Github and use a consecutive number. After the first version you built on your computer, Visual Studio will automatically use consecutive numbers every time you build.
+6. Be careful with the selection of packages. Check only ARM64 as Architecture, and select Release (ARM64) as Solution Configuration. To ensure consistent version numbering check the latest release on Github and use a consecutive number. After the first version you built on your computer, Visual Studio will automatically use consecutive numbers every time you build (if you leave `Automatically increment` ticked).
+    - if you don't want to create `.appxbundle` files switch `Generate app bundle` to `Never`
 7. Press Create and wait for it to finish. This process takes some minutes.
 
 Below is a GIF explaining the deployment process.
