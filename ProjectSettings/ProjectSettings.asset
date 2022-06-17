@@ -640,7 +640,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Surgery3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\laraz\Unity Projects\AR\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: CustomSurg
   metroCertificateIssuer: CustomSurg
