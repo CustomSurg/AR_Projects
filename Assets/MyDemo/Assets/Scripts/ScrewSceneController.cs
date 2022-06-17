@@ -196,6 +196,7 @@ public class ScrewSceneController : MonoBehaviour
 
     private void InitBones(Transform parent)
     {
+        // Add a convex mesh collider to each fragment if it doesn't have one
         int child_count = 0;
         foreach (Transform child in parent)
         {
@@ -226,7 +227,7 @@ public class ScrewSceneController : MonoBehaviour
         allGroupStartingRotation = allGroup.transform.rotation;
 
         GenerateScrewsFromTextFiles();
-        SetScrewTags();
+        SetScrewTags(); // set whether screws are med, lat or dist
 
         screwIndex = 0;
     }

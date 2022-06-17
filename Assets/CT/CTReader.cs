@@ -10,9 +10,9 @@ using UnityEngine;
 
 public class CTReader : MonoBehaviour
 {
-    public TextAsset ct;
+    public TextAsset ct; // set by PatientController to be the contents of the bytes file
     public ComputeShader slicer;
-    public GameObject oo;
+    public GameObject oo; // oo is the dummy object in the scene
     public GameObject sliderH, sliderV;
     public GameObject quadH, revQuadH, quadV, revQuadV, ctPlaneV;
     int kernel;
@@ -46,10 +46,10 @@ public class CTReader : MonoBehaviour
 
     private void PointCloud(NRRD nrrd)
     {
-        AutoAlign autoAlign = oo.GetComponent<AutoAlign>();
+        AutoAlign autoAlign = oo.GetComponent<AutoAlign>(); // AutoAlign.cs is a script attached to dummy object
         autoAlign.SetGo(false);
-        DummyTransformHandler dummyHandler = oo.GetComponent<DummyTransformHandler>();
-        dummyHandler.GoToZero();
+        DummyTransformHandler dummyHandler = oo.GetComponent<DummyTransformHandler>(); // DummyTransformHandler.cs is another script attached to dummy object
+        dummyHandler.GoToZero(); // resets position of dummy object
 
         float lengthDirection = nrrd.lengthDirection, lengthSize = nrrd.dims[2];
         ctLength = Math.Abs(lengthDirection * lengthSize);
@@ -91,6 +91,7 @@ public class CTReader : MonoBehaviour
             ctPlaneV.transform.localScale.y, ctPlaneV.transform.localScale.z);
         ctPlaneV.transform.localScale = ctPlaneVLocalScale;
 
+        // What is this hardcoded position?
         dummyHandler.ChangeTransform(new Vector3(0.941f, 0.75f, 1.729f),
             new Vector3(0f, 90f, 0f),
             new Vector3(0.0025f, 0.0025f, 0.0025f));
@@ -120,6 +121,7 @@ public class CTReader : MonoBehaviour
 
     private void ComputeMinMaxFloats(NRRD nrrd)
     {
+        // Compute extents of the CT
         int rounds = 2;
         minx = float.MaxValue;
         maxx = float.MinValue;

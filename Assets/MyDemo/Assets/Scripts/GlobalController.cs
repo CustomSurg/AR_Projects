@@ -158,6 +158,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
         if (child_counter == 0)
         {
+            // Creates a bounding box around the whole bone construct, allow manipulation of it
             BoundingBox bb =
                 parent.gameObject.GetComponent<BoundingBox>() == null ?
                 parent.gameObject.AddComponent<BoundingBox>() :
@@ -407,7 +408,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
     {
         Debug.Log("Reset Button Pressed");
 
-        for (int i = 1; i < originalTransform.Count; i++)
+        for (int i = 0; i < originalTransform.Count; i++)
         {
             bones[i].transform.localPosition = originalTransform[i].pos;
             bones[i].transform.localRotation = originalTransform[i].rotate;
@@ -588,6 +589,10 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
                 boneRef.transform,
                 nearMenu.transform);
             screwScene.SetActive(false);
+            patientsController.cTReader.Init(); // initializes CT cube and calculates outer bounds
+            patientsController.Init();
+            patientsController.cTReader.CenterToCCCT(); // make sure the CT cube is centered
+            Init();
         }
         else
         {

@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: MRLab
+  companyName: CustomSurg
   productName: Surgery
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -638,14 +638,14 @@ PlayerSettings:
     Windows Store Apps: 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template3D
+  metroPackageName: Surgery3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: Assets\WSATestCertificate.pfx
+  metroCertificatePath: C:\Users\laraz\Unity Projects\AR\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: MRLab
-  metroCertificateIssuer: MRLab
-  metroCertificateNotAfter: 802fff85b99fd901
-  metroApplicationDescription: Template_3D
+  metroCertificateSubject: CustomSurg
+  metroCertificateIssuer: CustomSurg
+  metroCertificateNotAfter: 809cda5531a1d901
+  metroApplicationDescription: Surgery Enhancement Tool
   wsaImages:
     65636: Assets/Icon/store_logo/logo_50.png
     65661: Assets/Icon/store_logo/logo_63.png

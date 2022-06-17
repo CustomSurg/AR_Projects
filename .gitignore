@@ -60,7 +60,9 @@ sysinfo.txt
 *.unitypackage
 
 # Private Scans Assets
-Assets/Patients/*/CT/*
+Assets/Patients/**/CT/*
+**.bytes
+**.nrrd
 
 
 # Crashlytics generated file

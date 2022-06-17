@@ -8,6 +8,7 @@ public class DummyTransformHandler : MonoBehaviour
 
     public void GoToZero()
     {
+        // sets the position of the dummy object to 0 and resizes it, creates a backup of old position
         backupPosition = transform.localPosition;
         backupEulerAngles = transform.localEulerAngles;
         backupScale = transform.localScale;
@@ -26,6 +27,7 @@ public class DummyTransformHandler : MonoBehaviour
 
     public void ChangeTransform(Vector3 newPosition, Vector3 newEulerAngles, Vector3 newScale)
     {
+        // set a new position for the dummy object
         transform.localPosition = newPosition;
         transform.localEulerAngles = newEulerAngles;
         transform.localScale = newScale;

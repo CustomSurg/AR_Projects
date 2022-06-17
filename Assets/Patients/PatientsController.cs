@@ -49,6 +49,7 @@ public class PatientsController : MonoBehaviour
 
     private void TutuneTranslation()
     {
+        // set the position of sliders and fracture fragments (patientManip) to a reference center
         Vector3 refCenter = CTConstants.REFERENCE_CENTER;
         Vector3 newCenter = cTReader.GetCenterOfCt();
         float xTranslation = refCenter.x - newCenter.x,
@@ -149,8 +150,9 @@ public class PatientsController : MonoBehaviour
         return combinedBounds;
     }
 
-    public void PickNewPatient(bool first)
+    public void PickNewPatient(bool first) // this function is linked to the click-event of the patient selection dialog
     {
+        // choses the correct files for the patient that was chosen
         patientManip = first ? patientManipOne : patientManipTwo;
         patientManip.SetActive(true);
         globalController.patient = patientManip;
@@ -169,11 +171,11 @@ public class PatientsController : MonoBehaviour
         scans = first ? scansOne : scansTwo;
         cTReader.ct = scans;
 
-        cTReader.Init();
+        cTReader.Init(); // initializes CT cube and calculates outer bounds
 
-        TutunePinchSliders();
+        TutunePinchSliders(); // uses outer bounds of CT to create the CT sliders in correct position
         TutuneTranslation();
-        cTReader.CenterToCCCT();
+        cTReader.CenterToCCCT(); // make sure the CT cube is centered
 
         globalController.Init();
         screwController.Init();
