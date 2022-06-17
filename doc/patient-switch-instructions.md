@@ -35,7 +35,7 @@ Open the 3dm patient model using Rhino and run [this](https://github.com/SimonCo
 
 ## New Patient Setup in Unity
 
-First, you need to import the patient data into the Unity project. Drag and drop the patient folder you created before into the `Assets/Patients` folder in this repository. Make sure to delete the 3dm Rhino model before.
+First, you need to import the patient data into the Unity project. Drag and drop the patient folder you created before into the `Assets/Patients/Patient_1` or `Assets/Patients/Patient_2` folder in this repository (1 & 2 refers to the patient number on the HoloLens). Make sure to delete the 3dm Rhino model before.
 
 This process is shown in the GIF below.
 
