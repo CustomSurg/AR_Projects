@@ -16,9 +16,9 @@ public class HandSlice : MonoBehaviour {
     public bool locked = false;
 
     public Plane plane = new Plane(new Vector3(0, 1, 0), new Vector3(0, 0, 0));
-    GameObject pinchSlider;
-    GameObject pinchSliderHor;
-    GameObject handPlane;
+    public GameObject pinchSlider;
+    public GameObject pinchSliderHor;
+    public GameObject handPlane;
 
     Texture2D tex;
     GameObject referencePlane;
@@ -28,9 +28,9 @@ public class HandSlice : MonoBehaviour {
     void Start() {
         tex = new Texture2D(width, height);
         GetComponent<Renderer>().material.mainTexture = tex;
-        pinchSlider = GameObject.Find("PinchSlider");
-        pinchSliderHor = GameObject.Find("PinchSliderHor");
-        handPlane = GameObject.Find("HandPlaneMove");
+        //pinchSlider = GameObject.Find("PinchSliderV");
+        //pinchSliderHor = GameObject.Find("PinchSliderH");
+        //handPlane = GameObject.Find("HandPlaneMove");
     }
 
     void Update() {

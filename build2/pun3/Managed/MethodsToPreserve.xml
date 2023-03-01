@@ -1,0 +1,19 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GlobalController">
+			<method name="ChangeHandness_PUN"/>
+			<method name="ChangeHandSlicerState_PUN"/>
+			<method name="ChangeScene_PUN"/>
+			<method name="GoBackToMainMenu_PUN"/>
+			<method name="ManageManipulation_PUN"/>
+			<method name="ResetPositions_PUN"/>
+			<method name="RestartApp_PUN"/>
+			<method name="ScanToPlanes_PUN"/>
+			<method name="ShowOrHideSlider_PUN"/>
+			<method name="SwitchBoneManipulation_PUN"/>
+			<method name="SwitchGroupManipulation_PUN"/>
+			<method name="SwitchScansManipulation_PUN"/>
+			<method name="VisualizeDocuments_PUN"/>
+		</type>
+	</assembly>
+</linker>

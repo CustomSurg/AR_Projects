@@ -1,0 +1,39 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GlobalController">
+			<method name="ChangeHandness_PUN"/>
+			<method name="ChangeHandSlicerState_PUN"/>
+			<method name="ChangeScene_PUN"/>
+			<method name="ChangeScene_PUN"/>
+			<method name="GoBackToMainMenu_PUN"/>
+			<method name="ManageManipulation_PUN"/>
+			<method name="ResetPositions_PUN"/>
+			<method name="RestartApp_PUN"/>
+			<method name="ScanToPlanes_PUN"/>
+			<method name="ShowOrHideSlider_PUN"/>
+			<method name="SwitchBoneManipulation_PUN"/>
+			<method name="SwitchGroupManipulation_PUN"/>
+			<method name="SwitchScansManipulation_PUN"/>
+			<method name="VisualizeDocuments_PUN"/>
+		</type>
+		<type fullname="ScrewSceneController">
+			<method name="ChangeBoneVisibility_PUN"/>
+			<method name="ChangeBoundsControlState_PUN"/>
+			<method name="ChangePlatesVisibility_PUN"/>
+			<method name="ChangeScrewState_PUN"/>
+			<method name="DeleteScrew_PUN"/>
+			<method name="ManipulateScrew_PUN"/>
+			<method name="NewScrew_PUN"/>
+			<method name="NewScrewPlanar_PUN"/>
+			<method name="NextScrew_PUN"/>
+			<method name="PrevScrew_PUN"/>
+			<method name="ResetScrews_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+			<method name="ScrewRotDir_PUN"/>
+		</type>
+	</assembly>
+</linker>

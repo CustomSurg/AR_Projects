@@ -12,8 +12,9 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using static Microsoft.MixedReality.Toolkit.UI.ObjectManipulator;
+using Photon.Pun;
 
-public class ScrewSceneController : MonoBehaviour
+public class ScrewSceneController : MonoBehaviourPun
 {
 
     // Screw Positions
@@ -314,6 +315,7 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    [PunRPC]
     public void ChangeBoneVisibility()
     {
         TextMeshPro[] texts = RetrieveButtonText(ScrewConstants.BONE_VISIBILITY_BUTTON);
@@ -330,11 +332,17 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    public void ChangeBoneVisibility_PUN()
+    {
+        photonView.RPC("ChangeBoneVisibility", RpcTarget.All);
+    }
+
     public void Debuggie()
     {
         return;
     }
 
+    [PunRPC]
     public void ScrewRotDir(String dir)
     {
         GameObject screw = screws[screwIndex];
@@ -369,6 +377,11 @@ public class ScrewSceneController : MonoBehaviour
         screw.transform.RotateAround(firstEndPoint,
             axis,
             10f);
+    }
+
+    public void ScrewRotDir_PUN(String dir)
+    {
+        photonView.RPC("ScrewRotDir", RpcTarget.All, dir);
     }
 
     private void TrySettingPlate(PlatesState plate, bool flag)
@@ -442,6 +455,7 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    [PunRPC]
     public void ChangePlatesVisibility()
     {
         TextMeshPro[] texts = RetrieveButtonText(ScrewConstants.CHANGE_PLATES_VISIBILITY);
@@ -517,6 +531,11 @@ public class ScrewSceneController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void ChangePlatesVisibility_PUN()
+    {
+        photonView.RPC("ChangePlatesVisibility", RpcTarget.All);
     }
 
     private bool ScrewIsNotTag(GameObject screw, String flag)
@@ -598,6 +617,7 @@ public class ScrewSceneController : MonoBehaviour
         return false;
     }
 
+    [PunRPC]
     public void NextScrew()
     {
         DeactivateScrew(screws[screwIndex]);
@@ -607,6 +627,12 @@ public class ScrewSceneController : MonoBehaviour
         ActivateScrew(screws[screwIndex]);
     }
 
+    public void NextScrew_PUN()
+    {
+        photonView.RPC("ChangePlatesVisibility", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void PrevScrew()
     {
         DeactivateScrew(screws[screwIndex]);
@@ -614,6 +640,11 @@ public class ScrewSceneController : MonoBehaviour
         FindPrevIndex();
 
         ActivateScrew(screws[screwIndex]);
+    }
+
+    public void PrevScrew_PUN()
+    {
+        photonView.RPC("PrevScrew", RpcTarget.All);
     }
 
     private void FindNextIndex()
@@ -737,6 +768,7 @@ public class ScrewSceneController : MonoBehaviour
         return scale;
     }
 
+    [PunRPC]
     public void ChangeScrewState()
     {
         TextMeshPro[] texts = RetrieveButtonText(ScrewConstants.SCREW_STATE_BUTTON);
@@ -764,6 +796,11 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    public void ChangeScrewState_PUN()
+    {
+        photonView.RPC("ChangeScrewState", RpcTarget.All);
+    }
+
     private void DeactivateAllBounds()
     {
         while(allGroup.GetComponentInChildren<BoxCollider>(true).enabled == true)
@@ -772,6 +809,7 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    [PunRPC]
     public void ChangeBoundsControlState()
     {
         TextMeshPro[] texts = RetrieveButtonText(ScrewConstants.CHANGE_BOUNDS_CONTROL);
@@ -798,6 +836,12 @@ public class ScrewSceneController : MonoBehaviour
         }
     }
 
+    public void ChangeBoundsControlState_PUN()
+    {
+        photonView.RPC("ChangeBoundsControlState", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void ResetScrews()
     {
         Vector3 allGroupPositionBackup = allGroup.transform.position;
@@ -833,6 +877,11 @@ public class ScrewSceneController : MonoBehaviour
         allGroup.transform.rotation = allGroupRotationBackup;
     }
 
+    public void ResetScrews_PUN()
+    {
+        photonView.RPC("ResetScrews", RpcTarget.All);
+    }
+
     private bool IsDeletedScrew(GameObject screw)
     {
         return screw.CompareTag(ScrewConstants.LAT_DELETED_SCREW_TAG) ||
@@ -858,6 +907,7 @@ public class ScrewSceneController : MonoBehaviour
         return screw.tag != ScrewConstants.NEW_SCREW_TAG && screw.tag != ScrewConstants.NEW_DELETED_SCREW_TAG;
     }
 
+    [PunRPC]
     public void NewScrew()
     {
         AddingScrewFirstIndicator = true;
@@ -866,6 +916,12 @@ public class ScrewSceneController : MonoBehaviour
         ScrewAddModePlanar = false;
     }
 
+    public void NewScrew_PUN()
+    {
+        photonView.RPC("NewScrew", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void NewScrewPlanar()
     {
         AddingScrewFirstIndicator = true;
@@ -873,6 +929,11 @@ public class ScrewSceneController : MonoBehaviour
         AddingScrewSecondIndicator = false;
         ScrewAddModePlanar = true;
 
+    }
+
+    public void NewScrewPlanar_PUN()
+    {
+        photonView.RPC("NewScrewPlanar", RpcTarget.All);
     }
 
     public void Screwpointregister(MixedRealityPointerEventData eventData)
@@ -1012,6 +1073,7 @@ public class ScrewSceneController : MonoBehaviour
         return cylinder;
     }
 
+    [PunRPC]
     public void ManipulateScrew()
     {
         ButtonConfigHelper buttonConfig = RetrieveButtonFromHierarchy(ScrewConstants.SCREW_MANIPULATE_BUTTON).GetComponentInChildren<ButtonConfigHelper>();
@@ -1029,18 +1091,29 @@ public class ScrewSceneController : MonoBehaviour
         SetCurrObjectManipulator(screws[screwIndex], manipulating);
     }
 
+    public void ManipulateScrew_PUN()
+    {
+        photonView.RPC("ManipulateScrew", RpcTarget.All);
+    }
+
     private void SetCurrObjectManipulator(GameObject screw, bool activate)
     {
         screw.GetComponentInChildren<ObjectManipulator>(true).enabled = activate;
         screw.GetComponentInChildren<NearInteractionGrabbable>(true).enabled = activate;
     }
 
+    [PunRPC]
     public void DeleteScrew()
     {
         GameObject screwToDelete = screws[screwIndex];
         NextScrew();
         ChangeDeleteScrewTag(screwToDelete);
         screwToDelete.SetActive(false);
+    }
+
+    public void DeleteScrew_PUN()
+    {
+        photonView.RPC("DeleteScrew", RpcTarget.All);
     }
 
     private void ChangeDeleteScrewTag(GameObject screw)

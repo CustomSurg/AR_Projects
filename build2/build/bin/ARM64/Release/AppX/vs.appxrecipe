@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CVG-LAPTOP-01</Machine>
+    <WindowsUser>Localadmin</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|ARM64</SolutionConfiguration>
+    <PackageArchitecture>arm64</PackageArchitecture>
+    <PackageIdentityName>7387f98a-2f2e-4164-8553-b7502690d12b</PackageIdentityName>
+    <PackageIdentityPublisher>CN=pun3</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\obj\pun3\ARM64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>34A6615FC45496C5DE29FAD2DAC44FCBB87D96AADF5D24A21D922930AC2F5CA3</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>pun3_1.0.0.0_arm64__gwq05vzd8k6ee</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>pun3_gwq05vzd8k6ee!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>pun3</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pun3</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-16T08:53:27.043</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\pun3.exe">
+      <PackagePath>pun3.exe</PackagePath>
+      <Modified>2022-12-16T08:31:45.730</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\UnityPlayer.winmd">
+      <PackagePath>UnityPlayer.winmd</PackagePath>
+      <Modified>2022-09-20T02:28:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\UnityPlayer.dll">
+      <PackagePath>UnityPlayer.dll</PackagePath>
+      <Modified>2022-09-20T02:28:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\pun3.winmd">
+      <PackagePath>pun3.winmd</PackagePath>
+      <Modified>2022-12-16T08:31:45.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.275</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.381</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.454</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.458</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.380</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.464</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.250</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.248</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.473</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-12-12T09:29:48.468</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+      <Modified>2022-12-15T22:47:59.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\boot.config">
+      <PackagePath>Data\boot.config</PackagePath>
+      <Modified>2022-12-15T22:47:51.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\globalgamemanagers">
+      <PackagePath>Data\globalgamemanagers</PackagePath>
+      <Modified>2022-12-15T22:47:31.994</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\level0">
+      <PackagePath>Data\level0</PackagePath>
+      <Modified>2022-12-15T22:47:21.525</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\Resources\unity default resources">
+      <PackagePath>Data\Resources\unity default resources</PackagePath>
+      <Modified>2022-09-20T01:07:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\Resources\unity_builtin_extra">
+      <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
+      <Modified>2022-12-15T22:47:51.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\globalgamemanagers.assets">
+      <PackagePath>Data\globalgamemanagers.assets</PackagePath>
+      <Modified>2022-12-15T22:47:32.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\resources.assets">
+      <PackagePath>Data\resources.assets</PackagePath>
+      <Modified>2022-12-15T22:47:32.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\sharedassets0.assets">
+      <PackagePath>Data\sharedassets0.assets</PackagePath>
+      <Modified>2022-12-15T22:47:50.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\globalgamemanagers.assets.resS">
+      <PackagePath>Data\globalgamemanagers.assets.resS</PackagePath>
+      <Modified>2022-12-15T22:47:32.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\level0.resS">
+      <PackagePath>Data\level0.resS</PackagePath>
+      <Modified>2022-12-15T22:47:21.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\resources.assets.resS">
+      <PackagePath>Data\resources.assets.resS</PackagePath>
+      <Modified>2022-12-15T22:47:32.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\sharedassets0.assets.resS">
+      <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
+      <Modified>2022-12-15T22:47:50.835</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\nativePlugins.txt">
+      <PackagePath>Data\nativePlugins.txt</PackagePath>
+      <Modified>2022-12-15T22:49:51.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\RuntimeInitializeOnLoads.json">
+      <PackagePath>Data\RuntimeInitializeOnLoads.json</PackagePath>
+      <Modified>2022-12-15T22:47:17.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\ScriptingAssemblies.json">
+      <PackagePath>Data\ScriptingAssemblies.json</PackagePath>
+      <Modified>2022-12-15T22:47:30.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\StreamingAssets\UnityServicesProjectConfiguration.json">
+      <PackagePath>Data\StreamingAssets\UnityServicesProjectConfiguration.json</PackagePath>
+      <Modified>2022-12-15T22:47:01.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\UnitySubsystems\MicrosoftOpenXRPlugin\UnitySubsystemsManifest.json">
+      <PackagePath>Data\UnitySubsystems\MicrosoftOpenXRPlugin\UnitySubsystemsManifest.json</PackagePath>
+      <Modified>2022-11-03T16:14:42.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\UnitySubsystems\UnityOpenXR\UnitySubsystemsManifest.json">
+      <PackagePath>Data\UnitySubsystems\UnityOpenXR\UnitySubsystemsManifest.json</PackagePath>
+      <Modified>2022-12-01T14:11:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\sharedassets0.resource">
+      <PackagePath>Data\sharedassets0.resource</PackagePath>
+      <Modified>2022-12-15T22:47:50.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\il2cpp_data\Metadata\global-metadata.dat">
+      <PackagePath>Data\il2cpp_data\Metadata\global-metadata.dat</PackagePath>
+      <Modified>2022-12-15T22:48:54.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\il2cpp_data\Resources\I18N.CJK.dll-resources.dat">
+      <PackagePath>Data\il2cpp_data\Resources\I18N.CJK.dll-resources.dat</PackagePath>
+      <Modified>2022-12-15T22:48:32.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\Data\il2cpp_data\Resources\mscorlib.dll-resources.dat">
+      <PackagePath>Data\il2cpp_data\Resources\mscorlib.dll-resources.dat</PackagePath>
+      <Modified>2022-12-15T22:48:32.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\CoarseRelocUW.dll">
+      <PackagePath>CoarseRelocUW.dll</PackagePath>
+      <Modified>2022-11-05T09:39:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\AzureSpatialAnchors.dll">
+      <PackagePath>AzureSpatialAnchors.dll</PackagePath>
+      <Modified>2022-11-05T09:39:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\openxr_loader.dll">
+      <PackagePath>openxr_loader.dll</PackagePath>
+      <Modified>2022-12-01T14:11:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\UnityOpenXR.dll">
+      <PackagePath>UnityOpenXR.dll</PackagePath>
+      <Modified>2022-12-01T14:11:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\pun3\MicrosoftOpenXRPlugin.dll">
+      <PackagePath>MicrosoftOpenXRPlugin.dll</PackagePath>
+      <Modified>2022-11-03T16:14:42.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\GameAssembly.dll">
+      <PackagePath>GameAssembly.dll</PackagePath>
+      <Modified>2022-12-16T08:31:27.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\baselib.dll">
+      <PackagePath>baselib.dll</PackagePath>
+      <Modified>2022-09-20T02:28:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Localadmin\Desktop\pun3\pun3\build2\build\bin\ARM64\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2022-12-16T08:53:26.771</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

@@ -41,6 +41,11 @@ public class PatientsController : MonoBehaviour
 
     private char sep = Path.DirectorySeparatorChar;
 
+    void Start()
+    {
+        PickNewPatient(true);
+    }
+
     public void Init()
     {
         TutunePinchSliders();

@@ -2,8 +2,9 @@
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Linq;
 using UnityEngine;
+using Photon.Pun;
 
-public class SliderSlice : MonoBehaviour {
+public class SliderSlice : MonoBehaviourPun {
     public CTReader ct;
     public int width, height;
 
@@ -51,6 +52,7 @@ public class SliderSlice : MonoBehaviour {
         return texture;
     }
 
+    [PunRPC]
     public void UpdateHelper()
     {
         currentVal = slider.SliderValue;
@@ -90,7 +92,8 @@ public class SliderSlice : MonoBehaviour {
 
     void Update() {
         if (currentVal != slider.SliderValue ) {
-            UpdateHelper();
+            photonView.RPC("UpdateHelper", RpcTarget.All);
+            //UpdateHelper();
         }
     }
 }

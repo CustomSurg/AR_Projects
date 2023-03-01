@@ -9,6 +9,7 @@ using Microsoft.MixedReality.Toolkit.UI;
 using System;
 using System.Linq;
 using Microsoft.MixedReality.Toolkit;
+using Photon.Pun;
 
 #if !UNITY_EDITOR && UNITY_WSA
 using Windows.ApplicationModel.Core;
@@ -18,7 +19,7 @@ public enum ColorState { Select, Edit };
 public enum ScaleState { Half, Original, Double };
 public enum BoneState { ShowAll, HidePlates, HideAll };
 
-public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
+public class GlobalController : MonoBehaviourPun//, IMixedRealitySpeechHandler
 {
     // Transform and positions
     class TransformInfo
@@ -178,6 +179,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void SwitchGroupManipulation()
     {
         Debug.Log("All Manipulation Button pressed");
@@ -205,6 +207,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void SwitchGroupManipulation_PUN()
+    {
+        photonView.RPC("SwitchGroupManipulation", RpcTarget.All);
+    }
+
     private void EnableGroupManipulation(TextMeshPro[] texts)
     {
         allBoundingBox.enabled = true;
@@ -225,6 +232,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void SwitchScansManipulation()
     {
         Debug.Log("Scans Manipulation Button pressed");
@@ -244,6 +252,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
 
             EnableScansManipulation(texts);
         }
+    }
+
+    public void SwitchScansManipulation_PUN()
+    {
+        photonView.RPC("SwitchScansManipulation", RpcTarget.All);
     }
 
     private void EnableScansManipulation(TextMeshPro[] texts)
@@ -266,6 +279,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void SwitchBoneManipulation()
     {
         Debug.Log("Bone Manipulation Button pressed");
@@ -285,6 +299,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
 
             EnableBoneManipulation(texts);
         }
+    }
+
+    public void SwitchBoneManipulation_PUN()
+    {
+        photonView.RPC("SwitchBoneManipulation", RpcTarget.All);
     }
 
     private void EnableBoneManipulation(TextMeshPro[] texts)
@@ -307,11 +326,17 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void ManageManipulation()
     {
         Debug.Log("Manage Manipulation pressed");
         
         EnableManipulationMenu(nearMenu);
+    }
+
+    public void ManageManipulation_PUN()
+    {
+        photonView.RPC("ManageManipulation", RpcTarget.All);
     }
 
     private void EnableManipulationMenu(GameObject menu)
@@ -324,11 +349,17 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         manipulationMenuCollection.SetActive(true);
     }
 
+    [PunRPC]
     public void GoBackToMainMenu()
     {
         Debug.Log("Back to Main pressed");
 
         DisableManipulationMenu(nearMenu);
+    }
+
+    public void GoBackToMainMenu_PUN()
+    {
+        photonView.RPC("GoBackToMainMenu", RpcTarget.All);
     }
 
     private void DisableManipulationMenu(GameObject menu)
@@ -341,6 +372,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         mainMenuCollection.SetActive(true);
     }
 
+    [PunRPC]
     public void ChangeHandness()
     {
         Debug.Log("Change Handness pressed");
@@ -366,6 +398,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ChangeHandness_PUN()
+    {
+        photonView.RPC("ChangeHandness", RpcTarget.All);
+    }
+
     public void DeactivateHandSlicer()
     {
         TextMeshPro[] texts = GameObject.Find("ChangeHandState").GetComponentsInChildren<TextMeshPro>();
@@ -388,6 +425,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void ChangeHandSlicerState()
     {
         Debug.Log("Change Hand State Pressed");
@@ -404,6 +442,12 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ChangeHandSlicerState_PUN()
+    {
+        photonView.RPC("ChangeHandSlicerState", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void ResetPositions()
     {
         Debug.Log("Reset Button Pressed");
@@ -419,9 +463,16 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         Vector3 scale = originalTransform[0].scale;
         Vector3 localScale = (gScaleState == ScaleState.Original) ? scale :
             (gScaleState == ScaleState.Double) ? scale * 2 : scale * 0.5f;
+       
         bones[0].transform.localScale = localScale;
     }
 
+    public void ResetPositions_PUN()
+    {
+        photonView.RPC("ResetPositions", RpcTarget.All);
+    }
+
+    [PunRPC]
     public void VisualizeDocuments()
     {
         TextMeshPro[] texts = GameObject.Find("VisualizeDocuments").GetComponentsInChildren<TextMeshPro>();
@@ -448,6 +499,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void VisualizeDocuments_PUN()
+    {
+        photonView.RPC("VisualizeDocuments", RpcTarget.All);
+    }
+
     private void ShowSlider()
     {
         TextMeshPro[] texts = GameObject.Find("ShowSlider").GetComponentsInChildren<TextMeshPro>();
@@ -470,6 +526,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    [PunRPC]
     public void ShowOrHideSlider()
     {
         Debug.Log("Slider Button Pressed");
@@ -489,6 +546,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ShowOrHideSlider_PUN()
+    {
+        photonView.RPC("ShowOrHideSlider", RpcTarget.All);
+    }
+
     public void ScaleUpStep()
     {
         Vector3 scale = originalTransform[0].scale;
@@ -505,6 +567,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         bones[0].transform.localScale = scale * factor;
     }
 
+    [PunRPC]
     public void ChangeScaleMode()
     {
         TextMeshPro[] texts = GameObject.Find("ScaleButton").GetComponentsInChildren<TextMeshPro>();
@@ -559,6 +622,11 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ChangeScaleMode_PUN()
+    {
+        photonView.RPC("ChangeScaleMode", RpcTarget.All);
+    }
+
     public void NextSlatePage()
     {
         Material nextPage = docSlate.transform.Find("ContentQuad").gameObject.GetComponent<Pages>().nextMat();
@@ -571,6 +639,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         docSlate.transform.Find("ContentQuad").gameObject.GetComponent<Renderer>().material = prevPage;
     }
 
+    [PunRPC]
     public void ChangeScene()
     {
         Debug.Log("Change Scene Button Pressed");
@@ -607,6 +676,12 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ChangeScene_PUN()
+    {
+        photonView.RPC("ChangeScene", RpcTarget.All);
+    }
+
+
     private void UpdateScenePosition(Transform oldSceneBone, Transform oldSceneMenu, Transform newSceneBone, Transform newSceneMenu)
     {
         PatientsController.CenterToRef(newSceneBone.gameObject, oldSceneBone.gameObject.GetComponentInChildren<Renderer>().bounds.center);
@@ -616,6 +691,7 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         PatientsController.SameResizeToRef(newSceneMenu.gameObject, oldSceneMenu.gameObject.GetComponentInChildren<Renderer>().bounds.size);
     }
 
+    [PunRPC]
     public void ScanToPlanes()
     {
         foreach (var quad in quads)
@@ -636,6 +712,12 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
     }
 
+    public void ScanToPlanes_PUN()
+    {
+        photonView.RPC("ScanToPlanes", RpcTarget.All);
+    }
+
+    [PunRPC]
     public async void RestartApp()
     {
 #if !UNITY_EDITOR && UNITY_WSA
@@ -650,6 +732,12 @@ public class GlobalController : MonoBehaviour//, IMixedRealitySpeechHandler
         }
 #endif
     }
+
+    public void RestartApp_PUN()
+    {
+        photonView.RPC("RestartApp", RpcTarget.All);
+    }
+
 }
 
 static class GlobalConstants
