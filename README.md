@@ -2,7 +2,7 @@
   <img src=doc/logo_customsurg.jpg alt="CustomSurg Logo"/>
 </h1>
 
-# AR Surgery Enhancement Application
+# AR Surgery Enhancement Application (Multi-user Functionality)
 
 This repository contains the surgery enhancement tool developed by CustomSurg for the Microsoft HoloLens 2.
 
